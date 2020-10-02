@@ -405,7 +405,7 @@ static void udiald_probe_cmd(struct udiald_state *state, const char *cmd, int ti
 			if (strstr(r.raw_lines[i], "IMEI"))
 				syslog(LOG_NOTICE, "<IMEI censored by udiald>");
 			else
-				syslog(LOG_NOTICE, r.raw_lines[i]);
+				syslog(LOG_NOTICE, "%s", r.raw_lines[i]);
 		}
 	}
 }

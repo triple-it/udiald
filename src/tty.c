@@ -250,7 +250,7 @@ pid_t udiald_tty_pppd(struct udiald_state *state) {
 	char *verbose_opts = (verbose == 0 ? "" : verbose == 1 ? " -v" : " -v -v");
 	snprintf(buf + 9 + l, sizeof(buf) - 9 - l, " -d -n%s -D%s -p%s %s\"\n", state->networkname, state->modem.device_id, state->modem.profile->name, verbose_opts);
 	fputs(buf, fp);
-	printf(buf);
+	printf("%s", buf);
 
 	// Set linkname and ipparam
 	fprintf(fp, "linkname \"%s\"\nipparam \"%s\"\n", state->networkname, state->networkname);

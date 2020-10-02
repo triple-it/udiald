@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # This script is written to parse the 50-Huawei-Datacard.rules from the
 # "HUAWEI Data Cards Linux Driver" available from Huawei.
